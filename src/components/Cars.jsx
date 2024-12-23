@@ -15,7 +15,7 @@ const arabaZesXe = () => {
                 <div className="araba-container" style={{
                     backgroundImage: `url(${CarsImages["electrayatay"]})`,
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className="araba-overlay" >
@@ -33,7 +33,7 @@ const arabaZesXe = () => {
                 <div className="araba-container" style={{
                     backgroundImage: `url(${CarsImages["castoryatay"]})`,
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className="araba-overlay" >
@@ -51,7 +51,7 @@ const arabaZesXe = () => {
                 <div className="araba-container" style={{
                     backgroundImage: `url(${CarsImages["vegayatay"]})`,
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className="araba-overlay" >
@@ -69,7 +69,7 @@ const arabaZesXe = () => {
                 <div className="araba-container" style={{
                     backgroundImage: `url(${CarsImages["novayatay"]})`,
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className="araba-overlay" >
