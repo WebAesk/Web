@@ -1,0 +1,151 @@
+/* Sayfanın geneli */
+.races-genel {
+    overflow-y: auto;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 50, 0.8),
+            rgba(0, 0, 100, 0.8)),
+        url('../assets/background2.png') no-repeat center center / cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 70px;
+    /* Header sabit üstte */
+    padding-bottom: 40px;
+    /* Footer'ın görünmesi için alt boşluk */
+}
+
+/* Sayfa içeriği */
+.races-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Her yarış için dış konteyner */
+.race-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Sol kısım (üst görsel, alt countdown) */
+.race-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+/* Üst görsel alanı */
+.race-left-top {
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+/* Alt countdown alanı */
+.race-left-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sağ kısım (bilgi) */
+.race-right {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.race-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+/* -------- Geri Sayım (Countdown) Tarzı -------- */
+.race-countdown-container {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.race-countdown-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.race-countdown-values {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Aşağıdaki kısım, geri sayım CSS’inin aynısı, sadece race-countdown-block için ufak bir margin ekledik */
+.race-countdown-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+    /* Her bloğun yanına biraz boşluk */
+}
+
+
+.race-countdown-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.race-countdown-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #b3b3b3;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .race-wrapper {
+        flex-direction: column;
+    }
+
+    .race-left,
+    .race-right {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .race-countdown-number {
+        font-size: 1.6rem;
+    }
+
+    .race-countdown-label {
+        font-size: 0.7rem;
+    }
+
+    .race-countdown-title {
+        font-size: 1rem;
+    }
+
+    .race-info {
+        font-size: 0.9rem;
+    }
+}

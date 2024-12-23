@@ -1,0 +1,99 @@
+.teams-genel {
+    /* Arkaplan ve sayfa genel düzeni */
+    overflow-y: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 50, 0.8), rgba(0, 0, 100, 0.8)),
+        url('../assets/background2.png') no-repeat center center / cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 70px;
+    /* Header sabit üstte, bu sayede içerik header altında görünsün */
+    padding-bottom: 40px;
+    /* Footer için biraz alt boşluk */
+}
+
+/* Sayfa içeriği için container */
+.teams-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Her bir başlık (Management, Ekip1 vb.) bölümü */
+.teams-section {
+    margin-bottom: 40px;
+}
+
+/* Bölüm başlıkları */
+.teams-section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+}
+
+/* Kartlar için grid yapı */
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Kartların genel yapısı */
+.teams-card {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Kartta üst tarafta fotoğraf alanı */
+.teams-card-bg {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Kart başlık ve alt başlık */
+.teams-card h3 {
+    opacity: 0.7;
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+.teams-card p {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .teams-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .teams-card-bg {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .teams-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .teams-card h3 {
+        font-size: 1rem;
+    }
+
+    .teams-card p {
+        font-size: 0.9rem;
+    }
+}
