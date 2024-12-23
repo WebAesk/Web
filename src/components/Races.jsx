@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/races.css';
+import '../css/Races.css';
 
 /**
  * Countdown bileşeni:
