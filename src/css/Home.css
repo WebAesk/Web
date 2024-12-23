@@ -114,8 +114,7 @@ html {
 /* Responsive Styling */
 @media (max-width: 768px) {
     .row {
-        flex-direction: column;
-        align-items: center;
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .info {
