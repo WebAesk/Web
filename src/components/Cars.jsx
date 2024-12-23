@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../css/car.css';
+import '../css/Car.css';
 import CarsImages from '../assets/ExportFile/CarsImages.jsx';
 const arabaZesXe = () => {
     const navigate = useNavigate();
