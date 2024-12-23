@@ -8,16 +8,11 @@
 .araba-container {
     border-radius: 12px;
     margin: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
     width: auto;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    object-fit: contain;
-    /* Resmi sığdırır (taşma/kırpma olmaz) */
-
 }
 
 .araba-overlay {
@@ -69,6 +64,10 @@
 
 /* Responsive Düzenlemeler */
 @media (max-width: 768px) {
+    .araba-container {
+        height: 40vh;
+    }
+
     .araba-title {
         font-size: 1.5rem;
     }
